@@ -1,26 +1,12 @@
-$(function() {
-  $("#bars").click(function(){
-    $("#bars").text
-   var allInputs = $("#bars".text);
+$(document).ready(function() {
+  $("form#match").submit(function(event) {
+    var age = parseInt($("input#age").val());
+    var gender = $("select#gender").val();
 
+    var celebrity = (age <= 100);
 
-    if (allInputs = "*") {
-      $("#celeb").show()
-    }
+    $("#celebrity").show();
+
+    event.preventDefault();
   });
 });
-
-
-
-
-  //  // $("#bars").(function(){
-  //   var celeb = $("#bars").text();
-  //   // console.log("#bars")
-  //   })
-
-
-    // var formChildren = $( "form > *" );
-
-
-    // $( "form" ).submit(function( event ) {
-    //   event.preventDefault();
