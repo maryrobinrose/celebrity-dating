@@ -3,9 +3,12 @@ $(document).ready(function() {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
 
-    var celebrity = (age <= 100);
-
-    $("#celebrity").show();
+    if (age <= 100) {
+      $("#celebrity").show();
+    }
+    if (age > 100) {
+      $("#celebrity2").show();
+    }
 
     event.preventDefault();
   });

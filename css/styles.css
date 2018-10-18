@@ -2,6 +2,10 @@
   display: none;
 }
 
+#celebrity2 {
+  display: none;
+}
+
 .btn {
   display: block;
 }
